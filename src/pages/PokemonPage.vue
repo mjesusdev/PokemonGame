@@ -1,7 +1,7 @@
 <template>
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <h1 class="text-dark" v-if="!pokemon">Espere por favor...</h1>
+            <h1 class="text-light" v-if="!pokemon">Espere por favor...</h1>
 
             <div v-else>
                 <img class="img-fluid" src="/img/pokemon-game.png" alt="Imagen Pokemon Game">
