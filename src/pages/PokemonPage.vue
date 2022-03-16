@@ -1,29 +1,34 @@
 <template>
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <h1 class="text-light" v-if="!pokemon">Espere por favor...</h1>
+    <div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-light" v-if="!pokemon">Espere por favor...</h1>
 
-            <div v-else>
-                <img class="img-fluid" src="/img/pokemon-game.png" alt="Imagen Pokemon Game">
-                <h1 class="text-info mt-4">¿Quién es este pokémon?</h1>
+                <div v-else>
+                    <img class="img-fluid" src="/img/pokemon-game.png" alt="Imagen Pokemon Game">
+                    <h1 class="text-success fw-bold mt-4">¿Quién es este pokémon?</h1>
 
-                <PokemonPicture 
-                    :pokemonId="pokemon.id" 
-                    :showPokemon="showPokemon"
-                />
+                    <PokemonPicture 
+                        :pokemonId="pokemon.id" 
+                        :showPokemon="showPokemon"
+                    />
 
-                <PokemonOptions 
-                    :pokemons="pokemonArr"
-                    @selection-pokemon="checkAnswer"
-                />
+                    <PokemonOptions 
+                        :pokemons="pokemonArr"
+                        @selection-pokemon="checkAnswer"
+                    />
 
-                <template v-if="showAnswer">
-                    <h2 class="fw-bold fade-in mt-4 mb-4" :class="type">{{ message }}</h2>
-                    <button class="btn btn-lg pb-3 btnNewGame" @click="newGame">
-                        Nuevo Juego
-                    </button>
-                </template>
+                    <template v-if="showAnswer">
+                        <h2 class="fw-bold fade-in mt-4 mb-4" :class="type">{{ message }}</h2>
+                        <button class="btn btn-lg pb-3 btnNewGame" @click="newGame">
+                            Nuevo Juego
+                        </button>
+                    </template>
+                </div>
             </div>
+        </div>
+        <div class="row justify-content-around text-light fixed-bottom mb-5">
+            Made by Craftianos with 💖
         </div>
     </div>
 </template>
