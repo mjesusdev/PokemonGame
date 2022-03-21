@@ -27,8 +27,17 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around text-light fixed-bottom mb-5">
-            Made by Craftianos with 💖
+        <div class="row justify-content-end text-info fixed-bottom mb-4">
+            <div class="author col-8 fs-4">
+                Made by Craftianos with 💖
+            </div>
+            <div class="code col-2">
+                <a class="btn btnCode text-success fs-5" href="https://github.com/mjesusoj/PokemonGame" 
+                    target="_blank" rel="noopener noreferrer">
+                    Project on Github
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -102,5 +111,9 @@
 
     .text-danger {
         color: #f44545 !important;
+    }
+
+    .btnCode:hover {
+        color: #24c88c !important;
     }
 </style>
