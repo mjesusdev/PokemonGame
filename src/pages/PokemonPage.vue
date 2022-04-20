@@ -2,14 +2,14 @@
     <div>
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <h1 class="text-light" v-if="!pokemon">Espere por favor...</h1>
+                <h1 class="text-light" v-if="!pokemon">Wait please... 🥲</h1>
 
                 <div v-else>
-                    <img class="img-fluid" src="/img/pokemon-game.png" alt="Imagen Pokemon Game">
-                    <h1 class="text-success fw-bold mt-4">¿Quién es este pokémon?</h1>
+                    <img class="img-fluid" src="/img/pokemon-game.png" alt="Pokemon Game Image">
+                    <h1 class="text-success fw-bold mt-4">Which pokemon is this? 🤔</h1>
 
                     <PokemonPicture 
-                        :pokemonId="pokemon.id" 
+                        :pokemonId="pokemon.id"
                         :showPokemon="showPokemon"
                     />
 
@@ -21,7 +21,7 @@
                     <template v-if="showAnswer">
                         <h2 class="fw-bold fade-in mt-4 mb-4" :class="type">{{ message }}</h2>
                         <button class="btn btn-lg pb-3 btnNewGame" @click="newGame">
-                            Nuevo Juego
+                            New Game 🎮
                         </button>
                     </template>
                 </div>
@@ -69,10 +69,10 @@
                 this.showAnswer  = true
 
                 if ( selectedId === this.pokemon.id ) {
-                    this.message = `🎉 ¡Correcto! es ${ this.pokemon.name } 🎉`
+                    this.message = `🎉 ¡Correct! is ${ this.pokemon.name } 🎉`
                     this.type = 'text-success'
                 } else {
-                    this.message = `🙈 ¡Incorrecto! era ${ this.pokemon.name } 🙈`
+                    this.message = `🙈 ¡Incorrect! was ${ this.pokemon.name } 🙈`
                     this.type = 'text-danger'
                 }
             },
