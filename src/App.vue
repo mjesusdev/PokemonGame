@@ -15,13 +15,13 @@ export default {
 
 <style>
   @font-face { 
-    font-family: Pokemon;
-    src: local('Pokemon'),
-    url(./fonts/PokemonSolid.ttf) format('truetype');
+    font-family: chubbo;
+    src: local('Chubbo'),
+    url(./assets/fonts/chubbo/Chubbo-Bold.ttf) format('truetype');
   } 
 
   #app {
-    font-family: 'Pokemon', Helvetica, Arial;
+    font-family: 'Chubbo', Helvetica, Arial;
     text-align: center;
     margin-top: 60px;
   }
