@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row justify-content-center">
+        <main class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <h1 class="text-light" v-if="!pokemon">Wait please... 🥲</h1>
 
@@ -26,15 +26,18 @@
                     </template>
                 </div>
             </div>
-        </div>
+        </main>
         <footer class="row justify-content-end fixed-bottom mb-4">
             <div class="col-12">
-                <p class="author text-info fs-4">
+                <h2 class="author text-info fs-4">
                     Made by Craftianos with 💖
-                </p>
-                <a class="btn btnCode text-success fs-5" href="https://github.com/mjesusoj/PokemonGame" 
-                    target="_blank" rel="noopener noreferrer">
-                    Project on Github
+                </h2>
+                <a 
+                    class="btn btnCode text-success fs-5"
+                    href="https://github.com/mjesusoj/PokemonGame"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        Project on Github
                     <i class="fa-brands fa-github fa-2x"></i>
                 </a>
             </div>
