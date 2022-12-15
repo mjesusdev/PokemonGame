@@ -1,7 +1,7 @@
 <template>
   <div class="options-container">
-    <ul class="list-group">
-      <li class="list-group-item mb-2" v-for="pokemon in pokemons" 
+    <ul class="list-group d-grid gap-2">
+      <li class="list-group-item btn mb-2" v-for="pokemon in pokemons" 
         :key="pokemon.id"
         @click="$emit( 'selection-pokemon', pokemon.id )">
           {{ pokemon.name }}

@@ -1,19 +1,19 @@
 <template>
     <div>
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-12 col-md-8">
                 <h1 class="text-light" v-if="!pokemon">Wait please... 🥲</h1>
 
                 <div v-else>
-                    <img class="img-fluid" src="/img/pokemon-game.png" alt="Pokemon Game Image">
+                    <img class="img-fluid w-50" src="/img/pokemon-game.png" alt="Pokemon Game Image">
                     <h1 class="text-success fw-bold mt-4">Which pokemon is this? 🤔</h1>
 
-                    <PokemonPicture 
+                    <PokemonPicture
                         :pokemonId="pokemon.id"
                         :showPokemon="showPokemon"
                     />
 
-                    <PokemonOptions 
+                    <PokemonOptions
                         :pokemons="pokemonArr"
                         @selection-pokemon="checkAnswer"
                     />
@@ -27,18 +27,18 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-end text-info fixed-bottom mb-4">
-            <div class="author col-8 fs-4">
-                Made by Craftianos with 💖
-            </div>
-            <div class="code col-2">
+        <footer class="row justify-content-end fixed-bottom mb-4">
+            <div class="col-12">
+                <p class="author text-info fs-4">
+                    Made by Craftianos with 💖
+                </p>
                 <a class="btn btnCode text-success fs-5" href="https://github.com/mjesusoj/PokemonGame" 
                     target="_blank" rel="noopener noreferrer">
                     Project on Github
                     <i class="fa-brands fa-github fa-2x"></i>
                 </a>
             </div>
-        </div>
+        </footer>
     </div>
 </template>
 
