@@ -29,9 +29,9 @@
         </main>
         <footer class="row justify-content-end fixed-bottom mb-4">
             <div class="col-12">
-                <h2 class="author text-info fs-4">
+                <!-- <h2 class="author text-info fs-4">
                     Made by Craftianos with 💖
-                </h2>
+                </h2> -->
                 <a 
                     class="btn btnCode text-success fs-5"
                     href="https://github.com/mjesusoj/PokemonGame"
